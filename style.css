@@ -26,10 +26,10 @@ ul ul {
 }
 
 /* ===== Attēls ar tekstu virsū ===== */
-.image-overlay {
+.container {
   position: relative;
-  text-align: center;
-  margin: 20px 0;
+  text-align: center-left;
+  color: black;
 }
 
 .image-overlay img {
@@ -42,9 +42,9 @@ ul ul {
 .image-overlay figcaption {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  left: 15%;
+  transform: translate(-50%, -15%);
+  color: black;
   font-size: 1.5em;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
@@ -52,3 +52,4 @@ ul ul {
   padding: 10px 15px;
   border-radius: 6px;
 }
+
