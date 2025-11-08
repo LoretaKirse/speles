@@ -10,21 +10,9 @@ h1, h2 {
   color: #000;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-figure {
-  text-align: center;
-  margin: 20px 0;
-}
-
-figcaption {
-  font-style: italic;
-  margin-top: 5px;
+a {
+  color: blue;
+  text-decoration: underline;
 }
 
 ul {
@@ -37,7 +25,30 @@ ul ul {
   margin-left: 30px;
 }
 
-a {
-  color: blue;
-  text-decoration: underline;
+/* ===== Attēls ar tekstu virsū ===== */
+.image-overlay {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-overlay img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-overlay figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 15px;
+  border-radius: 6px;
 }
